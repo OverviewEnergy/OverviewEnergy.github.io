@@ -13,16 +13,46 @@
       min-height: 100%;
     }
 
-    .content {
+    #content {
       font-family: 'Bebas Neue', cursive;
       position: fixed;
       text-align: center;
       bottom: 20%;
-      opacity: 20%;
       color: #fff;
       width: 100%;
       font-size: 5vw;
       letter-spacing: 0.3em;
+    }
+
+    #content img {
+      width: 75%;
+      height: auto;
+      opacity: 30%;
+    }
+
+    #links {
+      font-family: 'Bebas Neue', cursive;
+      position: fixed;
+      text-align: center;
+      bottom: 10%;
+      color: #fff;
+      width: 100%;
+      font-size: 16px;
+      letter-spacing: 0.3em;
+    }
+
+    #links a {
+      color: #fff;
+      text-decoration: none;
+      opacity: 30%;
+    }
+
+    #links span {
+      opacity: 30%;
+    }
+
+    #links a:hover {
+      opacity: 50%;
     }
   </style>
 </head>
@@ -31,12 +61,19 @@
     <source src="aurora.mp4" type="video/mp4">
   </video>
 
-  <div class="content">
-    <h1>Overview Energy</h1>
+  <div id="content">
+    <!-- Embed assets/overview_g3_vert_final_B.svg -->
+    <img src="assets/overview_g3_vert_final_B.svg" alt="Overview Energy">
   </div>
 
   <script>
     var obj = document.getElementById('myVideo');
     obj.playbackRate = 1.0;
   </script>
+
+  <div id="links">
+    <a href="https://forms.gle/xYUq9MnmasqnHQDf9">Contact</a>
+<!--    <span>|</span>-->
+<!--    <a href="/jobs.html">Jobs</a>-->
+  </div>
 </body>
