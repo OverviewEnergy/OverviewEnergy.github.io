@@ -34,17 +34,17 @@
       font-family: 'Bebas Neue', cursive;
       position: fixed;
       text-align: center;
-      bottom: 10%;
+      bottom: 12%;
       color: #fff;
       width: 100%;
       font-size: 16px;
       letter-spacing: 0.3em;
     }
 
-    #links a {
+    a {
       color: #fff;
       text-decoration: none;
-      opacity: 30%;
+      opacity: 50%;
     }
 
     #links span {
@@ -52,7 +52,26 @@
     }
 
     #links a:hover {
-      opacity: 50%;
+      opacity: 70%;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    #jobs-content {
+      text-align: center;
+      bottom: 5%;
+      position: fixed;
+      font-family: 'Bebas Neue', cursive;
+      color: #fff;
+      width: 100%;
+      font-size: 16px;
+      letter-spacing: 0.3em;
     }
   </style>
 </head>
@@ -73,7 +92,24 @@
 
   <div id="links">
     <a href="https://forms.gle/xYUq9MnmasqnHQDf9">Contact</a>
-<!--    <span>|</span>-->
-<!--    <a href="/jobs.html">Jobs</a>-->
+    <span>|</span>
+    <a href="/jobs.html" id="jobs">Jobs</a>
   </div>
+
+  <div id="jobs-content" class="hidden">
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSiJxRaHGX5J5NmiznuQRxMVod2HPN4OZhTFs_TikiSF4RqZby_QKi1kKMrtWOZmSpNm1rNtSGT7jHm/pub" target="_blank">Space Systems Lead</a> |
+    <a href="https://docs.google.com/document/d/e/2PACX-1vS6K5sRhDPbPMQSPPxupDBI5uK3KYDv6FW__6CloGer8MdZ1lmXe_NuHOaoDHR6PrtyejrYibgFKb7Y/pub" target="_blank">Space Photovoltaics Lead</a>
+  </div>
+
+  <script>
+    const jobs = document.querySelector('#jobs');
+    const jobsContent = document.querySelector('#jobs-content');
+    jobs.addEventListener('click', (e) => {
+      e.preventDefault();
+      jobsContent.classList.toggle('hidden');
+      // And make the jobs link bold
+      jobs.classList.toggle('bold');
+      return false;
+    });
+  </script>
 </body>
