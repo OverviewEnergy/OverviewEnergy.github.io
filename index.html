@@ -5,6 +5,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Bebas Neue', cursive;
+    }
+
     #myVideo {
       position: fixed;
       right: 0;
@@ -14,10 +18,9 @@
     }
 
     #content {
-      font-family: 'Bebas Neue', cursive;
       position: fixed;
       text-align: center;
-      bottom: 20%;
+      bottom: 22%;
       color: #fff;
       width: 100%;
       font-size: 5vw;
@@ -31,17 +34,16 @@
     }
 
     #links {
-      font-family: 'Bebas Neue', cursive;
       position: fixed;
       text-align: center;
-      bottom: 12%;
+      bottom: 5%;
       color: #fff;
       width: 100%;
       font-size: 16px;
       letter-spacing: 0.3em;
     }
 
-    a {
+    #links a {
       color: #fff;
       text-decoration: none;
       opacity: 50%;
@@ -51,12 +53,13 @@
       opacity: 30%;
     }
 
-    #links a:hover {
+    #links a:hover, #links a:focus, #links a:active, #links a:visited {
       opacity: 70%;
+      font-weight: normal;
     }
 
     .hidden {
-      display: none;
+      opacity: 0;
     }
 
     .bold {
@@ -64,14 +67,12 @@
     }
 
     #jobs-content {
-      text-align: center;
-      bottom: 5%;
-      position: fixed;
-      font-family: 'Bebas Neue', cursive;
-      color: #fff;
-      width: 100%;
-      font-size: 16px;
-      letter-spacing: 0.3em;
+      transition: all 1s;
+      margin-bottom: 20px;
+    }
+
+    #jobs-content div {
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -90,17 +91,27 @@
     obj.playbackRate = 1.0;
   </script>
 
-  <div id="links">
-    <a href="https://forms.gle/xYUq9MnmasqnHQDf9">Contact</a>
-    <span>|</span>
-    <a href="/jobs.html" id="jobs">Jobs</a>
-  </div>
+  <div id="links" class="expand-contract">
+    <div id="jobs-content" class="hidden">
+      <div>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSiJxRaHGX5J5NmiznuQRxMVod2HPN4OZhTFs_TikiSF4RqZby_QKi1kKMrtWOZmSpNm1rNtSGT7jHm/pub" target="_blank">Space Systems Lead</a>
+      </div>
+      <div>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vS6K5sRhDPbPMQSPPxupDBI5uK3KYDv6FW__6CloGer8MdZ1lmXe_NuHOaoDHR6PrtyejrYibgFKb7Y/pub" target="_blank">Space Photovoltaics Lead</a>
+      </div>
+      <div>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTDMhxWUBChpuwQYR3KlTQ2hy-0sTOtadg7vJZQmD5wWo1km1NB4K8YMBDYLYoDLezPA_RX-SNcPGvS/pub" target="_blank">Senior Thermal/Mechanical Engineer</a>
+      </div>
+      <div>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSRM2jsFGFT-cuPxwu1i0mUBX3dwwswEss9xWdRyVqRuwgnJsUva-WOzyFGWcedyWVplgKSH04C-Fse/pub" target="_blank">Hardware Development Engineer</a>
+      </div>
+    </div>
 
-  <div id="jobs-content" class="hidden">
-    <a href="https://docs.google.com/document/d/e/2PACX-1vSiJxRaHGX5J5NmiznuQRxMVod2HPN4OZhTFs_TikiSF4RqZby_QKi1kKMrtWOZmSpNm1rNtSGT7jHm/pub" target="_blank">Space Systems Lead</a> |
-    <a href="https://docs.google.com/document/d/e/2PACX-1vS6K5sRhDPbPMQSPPxupDBI5uK3KYDv6FW__6CloGer8MdZ1lmXe_NuHOaoDHR6PrtyejrYibgFKb7Y/pub" target="_blank">Space Photovoltaics Lead</a> |
-    <a href="https://docs.google.com/document/d/e/2PACX-1vTDMhxWUBChpuwQYR3KlTQ2hy-0sTOtadg7vJZQmD5wWo1km1NB4K8YMBDYLYoDLezPA_RX-SNcPGvS/pub" target="_blank">Senior Thermal/Mechanical Engineer</a> |
-    <a href="https://docs.google.com/document/d/e/2PACX-1vSRM2jsFGFT-cuPxwu1i0mUBX3dwwswEss9xWdRyVqRuwgnJsUva-WOzyFGWcedyWVplgKSH04C-Fse/pub" target="_blank">Hardware Development Engineer</a>
+    <div>
+      <a href="https://forms.gle/xYUq9MnmasqnHQDf9">Contact</a>
+      <span>|</span>
+      <a href="/jobs.html" id="jobs">Jobs</a>
+    </div>
   </div>
 
   <script>
@@ -109,7 +120,6 @@
     jobs.addEventListener('click', (e) => {
       e.preventDefault();
       jobsContent.classList.toggle('hidden');
-      // And make the jobs link bold
       jobs.classList.toggle('bold');
       return false;
     });
