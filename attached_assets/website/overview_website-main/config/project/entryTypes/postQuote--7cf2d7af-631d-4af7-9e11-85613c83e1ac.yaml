@@ -1,0 +1,59 @@
+color: null
+fieldLayouts:
+  93d6e65c-6dcc-40fc-a5c1-95dd64d981a1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-16T17:41:47+00:00'
+            elementCondition: null
+            fieldUid: c975e4b8-725b-40cf-8289-e0758ed7d08a # Body
+            handle: quote
+            includeInCards: false
+            instructions: null
+            label: Quote
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f4026b0-448f-468f-961a-a652aa8b484e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 245718a5-0486-4e2f-9988-dfb1dbbc1dcf
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-16T17:41:47+00:00'
+            elementCondition: null
+            fieldUid: 6ed3184f-7a68-4bb3-b991-e86a3a3fac25 # Section ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5dd4582b-ef22-4e2e-8815-edcbc48ee8c7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Config
+        uid: 0828928f-dd5d-4b7d-a85a-5c9620839888
+        userCondition: null
+handle: postQuote
+hasTitleField: false
+icon: null
+name: 'Post Quote'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

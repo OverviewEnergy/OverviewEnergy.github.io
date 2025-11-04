@@ -1,0 +1,25 @@
+{% set headerElement = section.headerLevel|default('h2') %}
+{% set headerClasses = '' ~ section.headerLevelStyle|default('h1') %}
+
+<section
+  class="{{classes}}"
+  {% if section.theSectionId is not empty %}
+    id="{{section.theSectionId}}"
+  {% endif %}
+>
+  <div
+    class="PageSection-container RichText"
+  >
+    {% if section.title is not empty %}
+      <{{headerElement|raw}}
+        class="RichText-header {{headerClasses}}"
+      >
+        {{section.title|raw}}
+      </{{headerElement|raw}}>
+    {% endif %}
+
+    <div class="RichText-body">
+      {{section.body|raw}}
+    </div>
+  </div>
+</section>

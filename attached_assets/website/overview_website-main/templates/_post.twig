@@ -1,0 +1,75 @@
+{% set layout = "layouts/_layout" %}
+{% extends layout %}
+{% block metaTitle %}{{meta.metaTitle}} – {{ entry.title }}{% endblock %}
+{% set category = entry.postCategories.one %}
+
+{% set crop = {
+  width: 1200,
+  height: 1200,
+  mode: 'fit',
+  quality: 80,
+} %}
+
+{% block content %}
+  <div class="PostSections">
+
+    <section
+      class="PostSection PostSection--lead"
+    >
+      <div
+        class="PostSection-container flex flex-col gap-[40px] lg:gap-[70px]
+               justify-center items-center"
+      >
+        <h1
+          class="h1 max-w-[765px] text-center"
+        >
+          {{entry.title|raw}}
+        </h1>
+
+        <div class="flex flex-row gap-[10px] text-gray-300">
+          {% if entry.postDate is not empty %}
+            <div class="">
+              {{entry.postDate|date('M j, Y')}}
+            </div>
+          {% endif %}
+
+          {% if entry.authorName is not empty %}
+            <div>•</div>
+            <div class="">
+              by {{entry.authorName}}
+            </div>
+          {% endif %}
+
+          {% if entry.readTime is not empty %}
+            <div>•</div>
+            <div class="">
+              {{entry.readTime}} Read
+            </div>
+          {% endif %}
+        </div>
+
+        {% if entry.image.one is not empty %}
+          <img
+            src="{{entry.image.one.getUrl(crop)}}"
+            alt="{{entry.image.one.title}}"
+            class="w-full max-w-[1100px] h-auto rounded"
+            loading="lazy"
+          />
+        {% endif %}
+
+      </div>
+    </section>
+
+    {% for section in entry.postSections.all() %}
+      {% set classes = 'PostSection' ~ ' PostSection--' ~ section.type  %}
+      {% include 'post-sections/_' ~ section.type ~ '.twig' %}
+    {% endfor %}
+  </div>
+
+  {% include 'shared/_postShare.twig' %}
+
+  {% if entry.relatedPosts|length > 0 %}
+    {% include 'post-sections/_relatedPosts.twig' %}
+  {% endif %}
+
+{% endblock %}

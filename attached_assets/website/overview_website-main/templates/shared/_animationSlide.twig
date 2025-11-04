@@ -1,0 +1,58 @@
+<div
+  class="absolute inset-0 opacity-0 pointer-events-none
+         first:opacity-100 first:pointer-events-auto
+         text-center lg:text-left"
+  data-animation-slide
+  {% if index is defined and index == 1 %}
+    data-init-section="Reveal"
+  {% endif %}
+>
+  <div class="flex flex-col h-full justify-start lg:justify-between
+              gap-y-[20px] lg:pr-[20px]">
+    <div class="flex flex-col h-[120px] max-w-[280px]
+                mx-auto md:mx-0 md:max-w-none lg:h-auto" data-reveal-item>
+      {% if slide.superheadline is not empty %}
+        <div class="h1 text-tan" >
+          {{slide.superheadline|raw}}
+        </div>
+      {% endif %}
+
+      {% if slide.title is not empty %}
+        <h2 class="h1 lg:mb-[10px]">
+          {{slide.title|raw}}
+        </h2>
+      {% endif %}
+
+      {% if slide.subheadline is not empty %}
+        <h3 class="h3">
+          {{slide.subheadline|raw}}
+        </h3>
+      {% endif %}
+    </div>
+
+    <div class="w-full grow bg-red-500/0 lg:hidden" data-animation-slide-spacer>
+    </div>
+
+    <div class="flex flex-col gap-[10px]" data-reveal-item>
+      {% if slide.bodyHeadline is not empty %}
+        <h4 class="h4 text-tan">
+          {{slide.bodyHeadline|raw}}
+        </h4>
+      {% endif %}
+
+      {% if slide.body is not empty %}
+        <div class="h3">
+          {{slide.body|raw}}
+        </div>
+      {% endif %}
+
+      {% if slide.links is not empty %}
+        {% include 'shared/_links.twig' with {
+          links: slide.links,
+          wrapperClasses: 'gap-[10px] mt-[30px] hidden lg:flex',
+          linkClasses: 'Button Button--tan'
+        } %}
+      {% endif %}
+    </div>
+  </div>
+</div>

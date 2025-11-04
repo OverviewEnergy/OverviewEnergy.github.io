@@ -1,0 +1,125 @@
+color: null
+fieldLayouts:
+  04a0f561-f736-4e36-acf7-eefa1c5e7608:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-05-06T21:52:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a07168f4-3f73-4b45-a4e4-0eb38b7ccff5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:56:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c975e4b8-725b-40cf-8289-e0758ed7d08a # Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4927506a-4366-4b53-82be-c6ddf0d6a3b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:56:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: aac3e44d-b810-42c7-be08-8c6a19a3340a # Media Item
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 986a96f0-e9b9-42cc-8e98-dcb7b1c8fd7e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:56:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 27f642c1-8a0f-4002-b8ad-bf1cf0d1923c # Progress Steps
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 453f3d2f-a1bb-4245-9513-fbca21e03640
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3ce19393-c564-402c-ab4b-e48644d1a429
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-06T21:56:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6ed3184f-7a68-4bb3-b991-e86a3a3fac25 # Section ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26c69206-ff52-4835-b051-3bfd5394c4b8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Config
+        uid: 14cba4b0-c6b7-4bc4-9d73-2e5008f586d9
+        userCondition: null
+handle: progress
+hasTitleField: true
+icon: null
+name: Progress
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

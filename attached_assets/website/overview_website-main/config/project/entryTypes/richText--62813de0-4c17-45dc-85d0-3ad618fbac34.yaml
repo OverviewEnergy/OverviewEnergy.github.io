@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  d6ac3bea-8d96-46e3-aca2-3cfbb9dcc8bc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-12T23:20:25+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Header
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 090cbfaa-b68e-4485-a9e7-e5a650b2a0ce
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-12T23:34:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 906cda80-c77b-419f-9fb3-5eaa3b05a46e # Header Level Element
+            handle: null
+            includeInCards: false
+            instructions: 'This option does not change the appearance of the header, but sets the header level HTML tag used (for content hierarchy/SEO purposes).'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fb6aefc-15db-40ea-a594-a619f617184e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-12-12T23:34:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a1f9ebe0-787a-42ac-a43a-f7d59f6a63ff # Header Level Style
+            handle: null
+            includeInCards: false
+            instructions: 'This option does not change the header level HTML tag used, only the styling.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9abffe1c-5e2d-4e31-ba66-f2a5788d1a2e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-12-12T23:35:21+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c0bb89cb-1b4c-4c8b-8048-920d37224ec4
+            userCondition: null
+          -
+            dateAdded: '2024-12-12T23:21:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c975e4b8-725b-40cf-8289-e0758ed7d08a # Body
+            handle: body
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28273e8a-2b8d-4c0d-bd88-cba1ab0a7805
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 14241f07-3a09-42b8-9e88-b0c1634a6acc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-12T23:24:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6ed3184f-7a68-4bb3-b991-e86a3a3fac25 # Section ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 541f37aa-279e-41aa-a2ea-6f02e72a2c34
+            userCondition: null
+            warning: null
+            width: 100
+        name: Config
+        uid: cad967fb-f470-4882-8a35-47015020d771
+        userCondition: null
+handle: richText
+hasTitleField: true
+icon: null
+name: 'Rich Text'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

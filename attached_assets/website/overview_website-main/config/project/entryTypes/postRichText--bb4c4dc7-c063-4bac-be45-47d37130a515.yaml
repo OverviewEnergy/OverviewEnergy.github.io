@@ -1,0 +1,59 @@
+color: null
+fieldLayouts:
+  f0c16066-5bf1-4943-ae20-931d074c501b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-11T23:20:04+00:00'
+            elementCondition: null
+            fieldUid: c975e4b8-725b-40cf-8289-e0758ed7d08a # Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f604079-b496-49b9-8f30-e6baf66c4f2d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9dddbb92-28c7-4fae-8650-1aaa12ee3ac4
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-17T19:25:10+00:00'
+            elementCondition: null
+            fieldUid: 6ed3184f-7a68-4bb3-b991-e86a3a3fac25 # Section ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8549e4b4-1705-4968-892d-0a58bfd20eb3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Config
+        uid: 58d01114-478f-4b9a-af07-2fca1e1a0444
+        userCondition: null
+handle: postRichText
+hasTitleField: false
+icon: ''
+name: 'Post Rich Text'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

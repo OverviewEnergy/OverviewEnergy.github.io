@@ -1,0 +1,188 @@
+color: null
+fieldLayouts:
+  9e84b709-c04c-43b5-ba96-64844725ad27:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-05-06T20:34:44+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Headline
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9f2f5976-060b-4d1a-9d64-d1120d9b4599
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T20:37:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c975e4b8-725b-40cf-8289-e0758ed7d08a # Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 782e8655-51d8-45cb-8164-82fc57517fe6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:12:49+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 433d1be2-e9db-42be-83d2-4ea8841994cd
+            userCondition: null
+          -
+            dateAdded: '2025-05-06T21:12:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: db9f0ef0-2ae0-4625-bb55-ff070d64492d # Image
+            handle: satelliteImage
+            includeInCards: false
+            instructions: null
+            label: 'Satellite Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28be77be-c8da-4297-ba5b-00bfb75b5901
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-07T23:26:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ce41e214-4d8b-4f6a-9ac2-95bb19271a32 # Image Tooltips
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 916d98be-b757-4ba1-94c7-b80b21e7de24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:12:49+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 0790b61a-f9b0-4598-ae6c-aa7baa4d1f28
+            userCondition: null
+          -
+            dateAdded: '2025-05-06T21:12:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0fe347cf-5e7b-4446-a9e1-359f64551463 # Text
+            handle: advantagesSuperheadline
+            includeInCards: false
+            instructions: null
+            label: 'Advantages Superheadline'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95e56288-ed2c-455b-9721-22aea495ec30
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:12:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0fe347cf-5e7b-4446-a9e1-359f64551463 # Text
+            handle: advantagesHeadline
+            includeInCards: false
+            instructions: null
+            label: 'Advantages Headline'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e73c07c4-b868-41cb-b44b-40382a40ee04
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:26:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0b697abd-77a0-4de9-8902-06f6701cc7cc # Advantages
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c259f1b-191a-499a-9f67-11729ea9f5c2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 95709426-0d05-485a-a8f1-dc4a0fceccab
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-06T20:39:38+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6ed3184f-7a68-4bb3-b991-e86a3a3fac25 # Section ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59b4f970-e15f-4c4c-a46c-0545dab792ac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Config
+        uid: cd0e06cf-9c5a-4c5b-9ba2-a6e50fa8ad1f
+        userCondition: null
+handle: satelliteExplorer
+hasTitleField: true
+icon: null
+name: 'Satellite Explorer'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,16 @@
+{% if pageInfo.getNextUrl() %}
+  <div
+    class="mt-[60px] flex justify-center"
+    data-post-pagination
+    data-barba-prevent="all"
+  >
+    <a
+      class="Button"
+      href="{{pageInfo.getNextUrl()}}"
+      data-pagination-more
+    >
+      Load More
+      {% include "svg/_downArrow.svg.twig" %}
+    </a>
+  </div>
+{% endif %}

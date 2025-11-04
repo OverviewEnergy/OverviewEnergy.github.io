@@ -1,0 +1,14 @@
+{% set layout = "layouts/_layout" %}
+{% extends layout %}
+
+{% block metaTitle %}{{meta.metaTitle}} – {{ entry.title }}{% endblock %}
+
+{% block content %}
+  <div class="PageSections">
+    {% set sections = entry.pageSections.all() %}
+    {% for section in sections %}
+      {% set classes = 'PageSection' ~ ' PageSection--' ~ section.type  %}
+      {% include 'sections/_' ~ section.type ~ '.twig' %}
+    {% endfor %}
+  </div>
+{% endblock %}

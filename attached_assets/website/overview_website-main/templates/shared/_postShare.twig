@@ -1,0 +1,54 @@
+{% set shareUrl = craft.app.request.absoluteUrl %}
+{% set emailUrl = "mailto:?subject=#{meta.metaTitle} – #{ entry.title }&body=#{shareUrl|url_encode}" %}
+
+<section
+  class="PostSection PostSection--footnotes max-w-[765px] mx-auto"
+>
+  <div
+    class="PostSection-container pt-0"
+  >
+    <div
+      class="flex flex-row gap-x-[30px] gap-y-[20px] flex-wrap"
+    >
+      <h4 class="">
+        Share Article:
+      </h4>
+
+      <div class="flex flex-row flex-wrap gap-[20px]">
+        {% include "shared/_link.twig" with {
+          link: {
+            linkType: 'custom',
+            openInNewTab: true,
+            linkTitle: 'Copy Link',
+            linkOnly: false,
+            linkUrl: shareUrl
+          },
+          classes: 'ClipboardCopy whitespace-nowrap no-underline transition-colors duration-300 hover:text-tan',
+          attributes: 'data-clipboard-text=' ~ shareUrl
+        } only %}
+
+        {% include 'shared/_link.twig' with {
+          link: {
+            linkType: 'custom',
+            openInNewTab: true,
+            linkTitle: 'Twitter (x)',
+            linkOnly: false,
+            linkUrl: "https://twitter.com/share?url=" ~  shareUrl
+          },
+          classes: 'no-underline whitespace-nowrap transition-colors duration-300 hover:text-tan'
+        } only %}
+
+        {% include "shared/_link.twig" with {
+          link: {
+            linkType: 'custom',
+            openInNewTab: true,
+            linkTitle: 'LinkedIn',
+            linkOnly: false,
+            linkUrl: "https://www.linkedin.com/sharing/share-offsite/?url=" ~  shareUrl
+          },
+          classes: 'no-underline whitespace-nowrap transition-colors duration-300 hover:text-tan'
+        } only %}
+      </div>
+    </div>
+  </div>
+</section>

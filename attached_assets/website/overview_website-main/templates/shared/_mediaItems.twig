@@ -1,0 +1,30 @@
+{% set wrapperClasses = wrapperClasses|default('') %}
+{% set itemClasses = itemClasses|default('') %}
+{% set firstItemClasses = firstItemClasses|default('') %}
+{% set imageClasses = imageClasses|default('') %}
+{% set captionClasses = captionClasses|default('') %}
+{% set attributes = attributes|default('') %}
+{% set sizes = sizes|default('100vw') %}
+{% set crop = crop|default('') %}
+
+{% if mediaItems|length > 0 %}
+  <div
+    {% if wrapperClasses is not empty %}class="{{wrapperClasses}}"{% endif %}
+    {% if attributes is not empty %}{{attributes|raw}}{% endif %}
+  >
+    {% for mediaItem in mediaItems %}
+      {% set preppedItemClasses = itemClasses %}
+      {% if loop.first %}
+        {% set preppedItemClasses = firstItemClasses ~ ' ' ~ itemClasses %}
+      {% endif %}
+      {% include "shared/_mediaItem.twig" with {
+        mediaItem: mediaItem,
+        itemClasses: preppedItemClasses,
+        imageClasses: imageClasses,
+        captionClasses: captionClasses,
+        sizes: sizes,
+        crop: crop
+      } only %}
+    {% endfor %}
+  </div>
+{% endif %}

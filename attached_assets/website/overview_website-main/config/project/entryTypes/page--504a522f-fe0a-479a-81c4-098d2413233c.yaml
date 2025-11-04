@@ -1,0 +1,151 @@
+color: null
+fieldLayouts:
+  b4d30497-25e3-4925-94f8-3a5216e22b16:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-22T17:02:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7facaac0-81f1-4959-bba6-bb944b977fac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-11T19:08:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6489c129-f289-4d86-871e-6179ff010f99 # Page Sections
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88dd97e4-debd-45ee-bf73-a04e0980a491
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 067437ec-0610-4302-b1d5-da527c7a69fa
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-11T19:08:49+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'These meta fields will override their global counterparts in the Globals > Meta section on a per-page basis. In the case of "Meta Title", if not set, the Page''s title field will be used.'
+            type: craft\fieldlayoutelements\Tip
+            uid: adaf71a8-e26e-43c8-898e-9bcbe63b0d15
+            userCondition: null
+          -
+            dateAdded: '2024-09-11T19:08:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7bedc8bb-4bc6-422c-b318-9d01c50df39f # Meta Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9debb23e-727f-4335-864b-57ee19069aa1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-11T19:08:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b722d671-d96f-4d4b-afa3-f3c1c446e20e # Meta Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0f5d552-075c-49d7-9823-5f7ad5160084
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-11T19:08:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 307f8307-f006-49b9-aa8b-900ddb2f0767 # Meta Keywords
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38c3f9be-8bbd-4c92-b714-c0466be483f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-11T19:08:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5eff4a3a-4d04-402d-b07e-0ee136a5eacc # Meta Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88eccce6-772d-4e5f-8c35-bbb294cae885
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: 55b86a93-b272-453d-9939-5464a5aaa1dc
+        userCondition: null
+handle: page
+hasTitleField: true
+icon: null
+name: Page
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

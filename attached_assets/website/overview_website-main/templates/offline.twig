@@ -1,0 +1,16 @@
+{# {% set layout = "layouts/_layout" %}
+{% extends layout %}
+
+{% block offline true %}
+{% block metaTitle %}{{meta.metaTitle}} – Coming Soon{% endblock %}
+
+{% block content %} 
+  <div class="PageSections">
+    {% for section in comingSoon.pageSections.all() %}
+      {% include 'sections/_' ~ section.type ~ '.twig' %}
+    {% endfor %}
+  </div>
+{% endblock %}
+ #}
+
+{{comingSoon.html|raw}}

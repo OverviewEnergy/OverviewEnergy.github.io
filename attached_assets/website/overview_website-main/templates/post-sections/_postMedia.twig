@@ -1,0 +1,25 @@
+{% set classes = classes ~ ' PostSection--postMedia-' ~ section.style %}
+{% set imageSizes = '(max-width: 640px) 100vw, 50vw' %}
+
+<section
+  class="{{classes}}"
+  {% if section.theSectionId is not empty %}id="{{section.theSectionId}}"{% endif %}
+>
+  <div
+    class="PostSection-container  max-w-[765px] mx-auto"
+  >
+    <div class="flex flex-col gap-[20px]">
+      {% include "shared/_mediaItem.twig" with {
+        mediaItem: section.mediaItem.one,
+        imageClasses: 'w-full rounded-[16px]',
+        sizes: imageSizes
+      } only %}
+
+      {% if section.caption is not empty %}
+        <div class="PostMediaCaption text-sm text-gray-300">
+          {{section.caption|nl2br|raw}}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

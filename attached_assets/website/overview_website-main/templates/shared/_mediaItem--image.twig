@@ -1,0 +1,55 @@
+{% set defaultVersionSizes = [320, 360, 412, 600, 768, 1024, 1280, 1440, 1600, 1920, 2560, 3000] %}
+{% set defaultCrop = {
+  mode: 'fit',
+  width: 2000,
+  height: 2000,
+  quality: 75,
+  position: 'center-center'
+} %}
+{% set itemClasses = itemClasses|default('') %}
+{% set imageClasses = imageClasses|default('') %}
+{% set versionSizes = versionSizes|default(defaultVersionSizes) %}
+{% set sizes = sizes|default('100vw') %}
+{% set crop = crop|default(defaultCrop) %}
+{% set imageStyle = imageStyle|default('') %}
+
+{% set image = mediaItem.image.one %}
+
+{% if image and image.hasFocalPoint %}
+  {% set x = image.focalPoint|first * 100 ~ '%' %}
+  {% set y = image.focalPoint|last * 100 ~ '%' %}
+  {% set imageStyle = imageStyle ~ ' object-position: ' ~ [x, y]|join(' ') ~ ';' %}
+{% endif %}
+
+{% set sourceAttributes = null %}
+{% set imageAttributes = null %}
+
+{% if image %}
+  <div class="MediaItem MediaItem--image {{itemClasses}}">
+    {% if image.extension == 'svg' %}
+      {% set sourceAttributes = {
+        type: 'image/svg+xml',
+        srcset: image.getUrl()
+      } %}
+    {% else %}
+      {% set sourceAttributes = {
+        type: 'image/webp',
+        srcset: image.getSrcset(versionSizes, { format: 'webp', quality: 90 }),
+        sizes: sizes
+      } %}
+    {% endif %}
+
+    {% set imageAttributes = {
+      class: imageClasses,
+      style: imageStyle,
+      loading: 'lazy',
+      src: image.getUrl(crop),
+      alt: image.alt|default(image.title)
+    } %}
+
+    <picture>
+      <source {{ attr(sourceAttributes) }}>
+      <img {{ attr(imageAttributes) }}>
+    </picture>
+  </div>
+{% endif %}

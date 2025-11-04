@@ -1,0 +1,63 @@
+fieldLayouts:
+  d78638e5-704e-4b94-be0a-7e76c1351d75:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-02T20:26:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e3c44a40-6b4f-492f-945f-b71ab515f2cc # Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Primary Menu'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0272ddad-25f1-4436-8477-52c0441d02d7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-12T23:21:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 62030e81-1dd5-4b85-9175-7604ad329442 # Call to Action
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3eec45a4-2dcd-481b-96de-0bfb09f3eebf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-12T23:21:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c61e98da-ef40-432d-8da8-d351518a5c21 # Secondary Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcec7d2a-ac03-4eaf-9190-529339799b7e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 536752d7-1881-49ee-9185-28e9d1af8e08
+        userCondition: null
+handle: header
+name: Header
+sortOrder: 1

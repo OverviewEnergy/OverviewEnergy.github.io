@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: subAccordionItems
+instructions: null
+name: 'Sub-accordion Items'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - c3fed09e-9147-41fe-8f48-1ca29f487646 # Sub-accordion Item
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

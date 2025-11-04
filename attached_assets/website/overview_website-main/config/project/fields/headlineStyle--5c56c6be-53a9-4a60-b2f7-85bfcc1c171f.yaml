@@ -1,0 +1,53 @@
+columnSuffix: null
+handle: headlineStyle
+instructions: null
+name: 'Headline Style'
+searchable: false
+settings:
+  customOptions: false
+  displayAsGraphic: null
+  displayFullwidth: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Small
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - small
+        -
+          - imageUrl
+          - ''
+        -
+          - imageAlign
+          - left
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Large
+        -
+          - showLabel
+          - '1'
+        -
+          - value
+          - large
+        -
+          - imageUrl
+          - ''
+        -
+          - imageAlign
+          - left
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: verbb\buttonbox\fields\Buttons

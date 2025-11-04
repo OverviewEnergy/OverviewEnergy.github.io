@@ -1,0 +1,61 @@
+color: null
+fieldLayouts:
+  d9f907fc-102c-4acf-a533-9ce871895054:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-06T19:55:06+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 30d41904-1986-4998-aaaf-1bd58f8efad7 # Animation Slides
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed06ed74-c91c-4944-ab1d-93e565fcfc13
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ef66df5b-ae82-44bb-80cd-c7c89b6acb26
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-06T19:55:36+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 6ed3184f-7a68-4bb3-b991-e86a3a3fac25 # Section ID
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 25b5529d-625d-434c-9ed0-a69b9f7519c8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Config
+        uid: d6ac74ac-0475-4235-a8ab-437261da3790
+        userCondition: null
+handle: animationSlides
+hasTitleField: false
+icon: null
+name: 'Animation Slides'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

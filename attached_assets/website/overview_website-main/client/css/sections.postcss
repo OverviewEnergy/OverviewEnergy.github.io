@@ -1,0 +1,34 @@
+@layer components {
+  .PageSections {
+    @apply relative z-[1];
+  }
+
+  .PageSection {
+    .PageSection-container {
+      @apply px-[20px] py-[60px] max-w-[var(--container-width)] mx-auto
+             md:px-[60px] md:py-[60px]
+             lg:px-[60px] lg:py-[100px];
+    }
+  }
+
+  .PageSections > .PageSection:first-child:not(.PageSection--hero),
+  .PostSection:first-child {
+    @apply pt-[80px];
+  }
+
+  .PostSection .PostSection-container {
+    @apply px-[20px] py-[60px] max-w-[var(--container-width)] mx-auto
+           md:px-[40px] md:py-[60px]
+           lg:px-[40px] lg:py-[60px];
+  }
+
+  .PostSection:first-child .PostSection-container {
+    @apply pt-[40px] md:pt-[60px] lg:pt-[100px];
+  }
+
+  .PostSection + .PostSection {
+    .PostSection-container {
+      @apply pt-0;
+    }
+  }
+}

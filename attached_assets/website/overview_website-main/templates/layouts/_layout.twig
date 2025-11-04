@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  {{scripts.scripts|raw}}
+
+  {% apply spaceless %}
+    {% set title = meta.metaTitle %}
+    {% set description = meta.metaDescription %}
+    {% set keywords = meta.metaKeywords %}
+    {% set metaImage = null %}
+    {% set offline = false %}
+
+    {% if block('offline') is defined %}
+      {% set offline = block('offline') %}
+    {% endif %}
+
+    {% if meta.metaImage | length > 0 %}
+      {% set metaImage = meta.metaImage.one().url %}
+    {% endif %}
+
+    {% if entry.metaTitle is defined and entry.metaTitle %}
+      {% set title = entry.metaTitle %}
+    {% endif %}
+
+    {% if category.metaTitle is defined and category.metaTitle %}
+      {% set title = category.metaTitle %}
+    {% endif %}
+
+    {% if block('metaTitle') is defined %}
+      {% set title = block('metaTitle') %}
+    {% endif %}
+
+    {% if block('metaDescription') is defined %}
+      {% set description = block('metaDescription') %}
+    {% endif %}
+
+    {% if entry.metaDescription is defined and entry.metaDescription %}
+      {% set description = entry.metaDescription %}
+    {% endif %}
+
+    {% if category.metaDescription is defined and category.metaDescription %}
+      {% set description = category.metaDescription %}
+    {% endif %}
+
+    {% if block('metaKeywords') is defined %}
+      {% set keywords = block('metaKeywords') %}
+    {% endif %}
+
+    {% if entry.metaKeywords is defined and entry.metaKeywords %}
+      {% set keywords = entry.metaKeywords %}
+    {% endif %}
+
+    {% if category.metaKeywords is defined and category.metaKeywords %}
+      {% set keywords = category.metaKeywords %}
+    {% endif %}
+
+    {% if entry.metaImage is defined and entry.metaImage | length > 0 %}
+      {% set metaImage = entry.metaImage.one().url %}
+    {% endif %}
+
+    {% if category.metaImage is defined and category.metaImage | length > 0 %}
+      {% set metaImage = category.metaImage.one().url %}
+    {% endif %}
+  {% endapply %}
+
+  <title>{{ title|raw }}</title>
+  <meta charset="utf-8">
+  <link rel="canonical" href="{{ siteUrl }}{{ craft.app.request.pathInfo|lower }}">
+  <meta name="description" content="{{ description|raw }}">
+  <meta name="keywords" content="{{ keywords|raw }}">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ title|raw }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ siteUrl }}/{{ craft.app.request.pathInfo }}">
+  <meta property="og:description" content="{{ description|raw }}">
+  <meta property="og:site_name" content="{{ siteName }}">
+  {% if metaImage %}
+    <meta property="og:image" content="{{ metaImage }}" />
+  {% endif %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  {% if getenv('CRAFT_ENVIRONMENT') == 'dev' %}
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+  {% else %}
+    <link rel="stylesheet" href="/{{ rev('assets/css/main.css') }}" type="text/css">
+  {% endif %}
+</head>
+
+{% set bodyClass = '' %}
+{% if block('bodyClass') is defined %}
+  {% set bodyClass = bodyClass ~ block('bodyClass') %}
+{% endif %}
+
+<body data-barba="wrapper" class="{{ bodyClass }}">
+  {% include 'layouts/partials/_header' %}
+
+  <main id="main-content" data-barba="container">
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  {% include 'layouts/partials/_modals' %}
+  {% include 'layouts/partials/_footer' %}
+  {% include 'layouts/partials/_scripts' %}
+  <!-- Page Rendered at: {{ now|atom  }} -->
+</body>
+</html>
