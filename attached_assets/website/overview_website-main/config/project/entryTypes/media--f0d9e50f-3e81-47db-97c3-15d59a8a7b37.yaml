@@ -1,0 +1,248 @@
+color: null
+fieldLayouts:
+  6ae17875-f832-4134-b65c-7eb4bb65416c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-19T20:17:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-11-19T20:57:00+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: dcd4c43d-ee8e-4a58-a15a-a9624603e619
+            userCondition: null
+          -
+            dateAdded: '2024-09-11T20:10:18+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: 48be5468-1add-422d-8377-0a80b6c9637c
+                  values:
+                    - image
+                    - video
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: db9f0ef0-2ae0-4625-bb55-ff070d64492d # Image
+            handle: null
+            includeInCards: false
+            instructions: 'Image will be used as placeholder if using a video media type.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcc25ab7-935b-4d4f-967c-a34d033cf4de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-18T20:58:13+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: 90c820a2-aa3e-417c-a760-2c1fe20b638d
+                  values:
+                    - video
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 079579e6-9fa5-435c-b3ff-517ef983910d # Video
+            handle: null
+            includeInCards: false
+            instructions: 'If multiple video assets are specified, they will be used as multiple "sources" in a single HTML Video element. The browser will automatically choose the first one with a supported video codec. Typically, MP4 (h.264 encoding) and WEBM are both necessary and MP4 should be placed first.'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a3f0ebe-4009-41f7-b38d-b774dc50faf9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-09T20:12:30+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: ef00c3f1-5230-4357-b5d7-98242e94ebba
+                  values:
+                    - embed
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 1c648a4a-9d05-4354-be01-759a26e1b7a0 # HTML
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2113bd35-6389-4d66-92b1-bd7c892e4d09
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-09T20:27:20+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: 717b10c2-780c-426c-abc8-e253bcd904d5
+                  values:
+                    - video
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 4c1e567e-810b-42e5-b704-2aa6073bc1fe # Switch
+            handle: showControls
+            includeInCards: false
+            instructions: null
+            label: 'Show Controls'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a0505e1-a869-4602-9b29-af20ec55d843
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-05-09T20:27:20+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: 0c15b743-e63f-4907-a86d-8f6303a82801
+                  values:
+                    - video
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 4c1e567e-810b-42e5-b704-2aa6073bc1fe # Switch
+            handle: loop
+            includeInCards: false
+            instructions: null
+            label: Loop
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de0b22b5-4030-422e-ba2c-1910999588dc
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-05-09T20:27:20+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: e88f7abb-6531-45b1-a703-b753c49fa40c
+                  values:
+                    - video
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 4c1e567e-810b-42e5-b704-2aa6073bc1fe # Switch
+            handle: muted
+            includeInCards: false
+            instructions: null
+            label: Muted
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7403f5bc-5ea1-400b-ada6-5befaa6a30d0
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-05-09T20:28:41+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 1a5a6930-39ba-455d-be6e-4fae01424e08 # Media Type
+                  layoutElementUid: 7807f4ae-101e-45f0-890d-30cff3ce3dfc
+                  operator: in
+                  uid: aa077efb-ddf9-4b5b-af59-8d4363f732b7
+                  values:
+                    - video
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 4c1e567e-810b-42e5-b704-2aa6073bc1fe # Switch
+            handle: autoplay
+            includeInCards: false
+            instructions: null
+            label: Autoplay
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fa9d5e16-5b10-4270-8df0-58dcd82d35d6
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 0edd1082-1586-4067-9cea-72f5241d8c18
+        userCondition: null
+handle: media
+hasTitleField: false
+icon: null
+name: Media
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

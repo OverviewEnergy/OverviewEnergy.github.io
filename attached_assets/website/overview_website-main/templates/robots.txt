@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: {{getenv('PRIMARY_SITE_URL')}}/sitemap.xml

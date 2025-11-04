@@ -1,0 +1,77 @@
+<footer class="Footer">
+  <div class="Footer-container">
+
+    <div class="Footer-a">
+      <div class="Footer-a-a">
+        <a href="/" class="Footer-mark">
+          {% include 'svg/_mark.svg.twig' %}
+        </a>
+      </div>
+
+      <div class="Footer-a-b">
+        <h4 class="text-gray-400">
+          Get updates and follow our journey
+        </h4>
+        <h3 class="mb-[20px] md:mb-[40px]">
+          Ad Astra Pro Terra
+        </h3>
+
+        <form class="Footer-form" action="#">
+          <label for="email">
+            Email Address
+          </label>
+          <input type="email" placeholder="work@example.com" />
+          <button type="submit" class="Button Button--white">
+            Subscribe
+            {% include 'svg/_plus.svg.twig' %}
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="Footer-b">
+      <div class="Footer-b-a">
+        {% if footer.flagImage is not empty %}
+          <div class="FooterFlag">
+            <img
+              src="{{ footer.flagImage.one.url }}"
+              alt="{{ footer.flagImage.one.alt }}"
+              loading="lazy"
+            />
+          </div>
+        {% endif %}
+
+        {% if footer.flagLabel is not empty %}
+          <div class="h3">
+            {{ footer.flagLabel|raw }}
+          </div>
+        {% endif %}
+
+        <p class="text-xs">
+          &copy; {{ "now"|date("Y") }} {{ footer.finePrint|raw }}
+        </p>
+      </div>
+
+      <div class="Footer-b-b">
+        <div class="FooterMenus">
+          {% for menu in footer.menus %}
+            <div class="FooterMenu">
+              <h5 class="text-gray-400">
+                0{{loop.index}}
+              </h5>
+
+              <h3>
+                {{ menu.title }}
+              </h3>
+
+              {% include 'shared/_links' with {
+                links: menu.links,
+                wrapperClasses: 'FooterMenu-links'
+              } %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,37 @@
+{% set headerClasses = 'text-sans-18 font-medium mb-32 text-black/[0.9]
+                        sm:text-sans-20' %}
+
+{% if section.headlineStyle == 'large' %}
+  {% set headerClasses = 'text-sans-24 text-black/[0.9] mb-48
+                          sm:text-sans-36 sm:mb-64' %}
+{% endif %}
+
+<section
+  class="{{classes}}"
+  data-nav-theme="beige"
+  {% if section.theSectionId is not empty %}id="{{section.theSectionId}}"{% endif %}
+>
+  <div
+    class="PostSection-container text-left"
+  >
+    <h2 class="{{headerClasses}}">
+      {{section.title|raw}}
+    </h2>
+
+    <div
+      class="grid grid-cols-1 
+             sm:grid-cols-3 sm:gap-x-24 sm:gap-y-40"
+    >
+      {% for stat in section.statTable %}
+        <div class="py-24 border-t border-dashed border-t-black/20">
+          <h3 class="text-sans-36 mb-24 leading-none">
+            {{stat.stat}}
+          </h3>
+          <div class="text-sans-14 lg:text-sans-16">
+            {{stat.label}}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

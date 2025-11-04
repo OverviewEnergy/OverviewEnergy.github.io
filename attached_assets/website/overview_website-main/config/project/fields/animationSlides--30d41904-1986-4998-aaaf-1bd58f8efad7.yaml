@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: animationSlides
+instructions: null
+name: 'Animation Slides'
+searchable: false
+settings:
+  createButtonLabel: 'New slide'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 31d17ca4-e3b2-4448-8914-4928472fbe64 # Animation Slide
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

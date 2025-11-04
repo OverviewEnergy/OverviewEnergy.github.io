@@ -1,0 +1,38 @@
+color: null
+fieldLayouts:
+  b5198331-4248-4564-bc4a-1f93fbbadcc2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-05-07T16:21:33+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ab91d0f0-bcf0-4acb-a0d9-8348274d42b4 # Accordion Items
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4cea434b-9dc6-4ff2-a063-aaaf86e815a5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c6df90bb-02a7-43fc-ac71-833074296159
+        userCondition: null
+handle: accordion
+hasTitleField: false
+icon: null
+name: Accordion
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

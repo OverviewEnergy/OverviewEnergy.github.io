@@ -1,0 +1,138 @@
+<section
+  class="{{classes}} bg-gray-100 overflow-hidden"
+  {% if section.theSectionId is not empty %}
+    id="{{section.theSectionId}}"
+  {% endif %}
+  data-init-section="Tooltips,Reveal"
+>
+  <div class="PageSection-container">
+    <div
+      class="flex flex-col gap-[10px] items-center
+             lg:grid lg:grid-cols-2 lg:items-start"
+    >
+      <h2
+        class="h1 text-center
+               lg:text-left lg:pr-[60px]"
+        data-reveal-item
+      >
+        {{section.title|raw}}
+      </h2>
+
+      <div
+        class="hidden lg:block lg:text-left lg:text-large lg:font-display"
+        data-reveal-item
+      >
+        {{section.body|raw}}
+      </div>
+    </div>
+
+    {% if section.satelliteImage|length > 0 %}
+      <div
+        class="mt-[30px] mb-[30px] md:mt-[100px] md:mb-[100px] max-w-[800px]
+               relative mx-auto"
+        data-reveal-item
+      >
+        <img
+          src="{{section.satelliteImage.one.url}}"
+          alt="{{section.satelliteImage.one.alt}}"
+          class="w-full h-auto mx-auto block relative z-[1]
+                 aspect-[8/5.32] object-contain object-center"
+        />
+
+        <div class="absolute top-0 left-0 w-full h-full z-10">
+          {% for tooltip in section.imageTooltips %}
+            <div
+              data-tooltip
+              class="Tooltip"
+              style="{{tooltip.positioningCSS}}"
+            >
+              <div
+                data-tooltip-toggle
+                class="border border-tan rounded-[6px] p-[7px]
+                       **:fill-tan cursor-pointer transition-colors duration-200"
+              >
+                {% include "svg/_plus.svg.twig" %}
+              </div>
+              <div
+                data-tooltip-content
+                class="Tooltip-content">
+                <h4 class="h4 text-tan">{{tooltip.title|raw}}</h4>
+                <div class="text-[12px] text-tan">{{tooltip.body|raw}}</div>
+              </div>
+            </div>
+          {% endfor %}
+
+          <div
+            data-tooltip-mobile-content-container
+            class="absolute inset-0 z-10 pointer-events-none"
+          >
+            {% for tooltip in section.imageTooltips %}
+              <div
+                data-tooltip-mobile-content
+                class="MobileTooltipContent"
+              >
+                <div class="MobileTooltipContent-inner">
+                  <h4 class="h4 text-tan">{{tooltip.title|raw}}</h4>
+                  <div class="text-[12px] text-tan">{{tooltip.body|raw}}</div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    {% endif %}
+
+    <div
+      class="text-center text-mobile-base
+             md:text-tablet-h3 md:font-display mb-[60px] lg:hidden"
+      data-reveal-item
+    >
+      {{section.body|raw}}
+    </div>
+
+    <div class="flex flex-col text-center lg:text-left">
+      <h3
+        class="h1 text-[#B3B3B3]"
+        data-reveal-item
+      >
+        {{section.advantagesSuperheadline|raw}}
+      </h3>
+
+      <h4
+        class="h1 mb-[40px] md:mb-[60px]"
+        data-reveal-item
+      >
+        {{section.advantagesHeadline|raw}}
+      </h4>
+
+      <div class="md:grid md:grid-cols-3 md:gap-[40px]">
+        {% for advantage in section.advantages %}
+          <div
+            class="border-t border-gray-200 py-[40px] flex flex-col
+                   lg:max-w-[340px]"
+            data-reveal-item
+          >
+            <h5 class="h5 text-gray-300 mb-[10px]">
+              0{{loop.index}}
+            </h5>
+            <h3 class="text-mobile-h3 md:text-tablet-h3 md:font-display
+                       mb-[50px] max-w-[300px] mx-auto lg:mx-0 lg:text-h3">
+              {{advantage.title|raw}}
+            </h3>
+            <div class="mb-[50px]">
+              {{advantage.body|raw}}
+            </div>
+            <div>
+              {% include 'shared/_links.twig' with {
+                links: advantage.links,
+                wrapperClasses: '',
+                linkClasses: 'Button Button--tan'
+              } %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

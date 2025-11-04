@@ -1,0 +1,11 @@
+<section
+  class="{{classes}}"
+  data-nav-theme="beige"
+  {% if section.theSectionId is not empty %}id="{{section.theSectionId}}"{% endif %}
+>
+  <div
+    class="PostSection-container text-left max-w-[765px] mx-auto"
+  >
+    {{section.body|raw}}
+  </div>
+</section>

@@ -1,0 +1,15 @@
+@layer components {
+  .arrowBounce {
+    --distance: 20%;
+    animation: arrowBounce 1.5s ease-in-out infinite;
+
+    @keyframes arrowBounce {
+      0%, 100% {
+        transform: translateY(var(--distance));
+      }
+      50% {
+        transform: translateY(calc(var(--distance) * -1));
+      }
+    }
+  }
+}

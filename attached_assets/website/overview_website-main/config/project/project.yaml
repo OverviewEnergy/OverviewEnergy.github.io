@@ -1,0 +1,302 @@
+dateModified: 1751389000
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - link
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:c1f9043c-a9fe-4828-8b12-e36d12842d7e' # Page
+      tableAttributes:
+        - slug
+        - status
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:e20465eb-96b7-4f76-9f57-e12f30c984cf' # Post
+      tableAttributes:
+        - slug
+        - status
+        - postDate
+        - 'field:f1d51b4b-7d86-41ba-b54a-b81f85ea651d' # Post Categories
+        - link
+      type: native
+    -
+      key: 'section:a1e0354d-b430-47a5-858b-c83ebc9730f8'
+      type: native
+email:
+  fromEmail: $SERVD_SMTP_USERNAME
+  fromName: 'Overview Energy Website'
+  replyToEmail: $SERVD_SMTP_USERNAME
+  template: ''
+  transportSettings:
+    host: $SERVD_SMTP_HOSTNAME
+    password: $SERVD_SMTP_PASSWORD
+    port: $SERVD_SMTP_PORT
+    useAuthentication: '1'
+    username: $SERVD_SMTP_USERNAME
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  servd:
+    hasUrls: true
+    name: Servd
+    settings:
+      cdnUrlPattern: ''
+      customSubfolder: ''
+      makeUploadsPublic: true
+      optimisePrefix: ''
+      optimiseUrlPattern: ''
+      projectSlug: ''
+      securityKey: ''
+      subfolder: local/
+    type: servd\AssetStorage\AssetsPlatform\Fs
+    url: 'https://overview-website.files.svdcdn.com'
+meta:
+  __names__:
+    0b697abd-77a0-4de9-8902-06f6701cc7cc: Advantages # Advantages
+    0fe347cf-5e7b-4446-a9e1-359f64551463: Text # Text
+    1a5a6930-39ba-455d-be6e-4fae01424e08: 'Media Type' # Media Type
+    1c648a4a-9d05-4354-be01-759a26e1b7a0: HTML # HTML
+    1ff5212e-5424-4f4e-a34c-22ccf90fdff5: 'Menu with Title' # Menu with Title
+    2e71983e-2107-47e6-a837-6dc4cb005f67: Footer # Footer
+    3b8c826c-5b3e-49eb-a802-ee27369fb357: Accordion # Accordion
+    3f792a59-8c9f-4d6e-8f61-a72bcaebf9d4: Pathstream # Pathstream
+    4a6bdd90-6129-4622-bf45-24682ce34d48: Simple # Simple
+    4c1e567e-810b-42e5-b704-2aa6073bc1fe: Switch # Switch
+    04df0f5f-b9d5-4dda-b9a8-bcccda506022: Pathstream # Pathstream
+    4fdb97ac-06c8-4dc0-abf3-5b73cf2853f7: 'Post Categories' # Post Categories
+    5c56c6be-53a9-4a60-b2f7-85bfcc1c171f: 'Headline Style' # Headline Style
+    5dec678a-093e-432b-abd7-d39122a02195: 'Post Previews' # Post Previews
+    5eff4a3a-4d04-402d-b07e-0ee136a5eacc: 'Meta Image' # Meta Image
+    6a3cb58c-9a14-477f-b888-501f4877d1cd: 'Featured Post' # Featured Post
+    6d8e7dbb-e381-432a-a557-670cf1e07636: Scripts # Scripts
+    6ed3184f-7a68-4bb3-b991-e86a3a3fac25: 'Section ID' # Section ID
+    07af3e64-c252-44c4-9c90-1d3e48bb8c18: 'Post Stats' # Post Stats
+    7bedc8bb-4bc6-422c-b318-9d01c50df39f: 'Meta Title' # Meta Title
+    7cf2d7af-631d-4af7-9e11-85613c83e1ac: 'Post Quote' # Post Quote
+    9a572f93-3787-4b43-bea7-d43f58e4759b: 'Post Video' # Post Video
+    21b17955-d751-4222-af9d-db6b6d7d0a00: Progress # Progress
+    27f642c1-8a0f-4002-b8ad-bf1cf0d1923c: 'Progress Steps' # Progress Steps
+    29cda267-acc2-41c8-a75b-206fcec276f6: Images # Images
+    30d41904-1986-4998-aaaf-1bd58f8efad7: 'Animation Slides' # Animation Slides
+    31d17ca4-e3b2-4448-8914-4928472fbe64: 'Animation Slide' # Animation Slide
+    72ea8454-0e94-4a5e-af51-450122fc59e9: 'Sub-accordion Items' # Sub-accordion Items
+    74aa3075-6b50-4195-bc56-76a73f409d11: Partners # Partners
+    078fc071-b45f-4504-abf0-877ecdaab138: Status # Status
+    081b2fb0-369f-483e-a571-631f02ef49e5: 'Post Sections' # Post Sections
+    88f0e55c-2fe9-4049-b948-26039b043e11: 'Progress Step' # Progress Step
+    277c4b06-8b09-420c-a9ad-db7771f48862: List # List
+    307f8307-f006-49b9-aa8b-900ddb2f0767: 'Meta Keywords' # Meta Keywords
+    369e4ada-b4b2-4b43-8ce0-0fd6a2f8a59e: 'Animation Slides' # Animation Slides
+    388d380e-2738-48e8-b422-4ba2d7aaf746: Hero # Hero
+    504a522f-fe0a-479a-81c4-098d2413233c: Page # Page
+    526b4eb4-5a7a-44f5-a1cf-bc63dbec4794: 'Link Type' # Link Type
+    906cda80-c77b-419f-9fb3-5eaa3b05a46e: 'Header Level Element' # Header Level Element
+    979cd403-57a5-4d2e-8037-3331eedcad60: Posts # Posts
+    05801e5d-a02e-48e1-aeb5-b174ea569b63: Entry # Entry
+    0005823c-523f-4a5a-a6a3-eed6059e7483: 'Post Media' # Post Media
+    6489c129-f289-4d86-871e-6179ff010f99: 'Page Sections' # Page Sections
+    35751c01-c362-49c8-a3eb-206d4c418162: 'Image Tooltip' # Image Tooltip
+    54646d3b-fbcd-4406-be0d-759f027d4c47: URL # URL
+    62030e81-1dd5-4b85-9175-7604ad329442: 'Call to Action' # Call to Action
+    62813de0-4c17-45dc-85d0-3ad618fbac34: 'Rich Text' # Rich Text
+    079579e6-9fa5-435c-b3ff-517ef983910d: Video # Video
+    94674bfa-687b-4684-bde9-d87a991f7e19: Scale # Scale
+    228360e5-aa51-4aaa-bdc6-45abf66e81b8: Advantage # Advantage
+    952796bd-d102-4fcb-ab22-f9e776446004: 'Satellite Intro' # Satellite Intro
+    7727122d-ea02-477f-a1f4-d410bcacabd4: Number # Number
+    9876166d-a690-4c5f-a00b-f6249ecb89aa: 'Open in New Tab?' # Open in New Tab?
+    22040858-e5ad-401d-9d9a-c29216d4ffe9: Style # Style
+    a1f9ebe0-787a-42ac-a43a-f7d59f6a63ff: 'Header Level Style' # Header Level Style
+    a3bb26ab-660f-45b4-a002-7720c0975917: 'Public Schema' # Public Schema
+    a9ecbb3a-4ffa-4f23-b5e6-052187ed4bd6: Editor # Editor
+    a233aa63-0d9d-48d3-a11c-011ad884113f: 'Satellite Explorer' # Satellite Explorer
+    a1209ab2-f3bf-4889-a6ab-08c954a3e247: 'Partner Logo' # Partner Logo
+    aa544899-f81a-4428-bf55-3a28f6f66e7e: 'Accordion Item Type' # Accordion Item Type
+    aac3e44d-b810-42c7-be08-8c6a19a3340a: 'Media Item' # Media Item
+    ab91d0f0-bcf0-4acb-a0d9-8348274d42b4: 'Accordion Items' # Accordion Items
+    adb3c3ce-ef1b-43ed-b664-b70658cb8140: Servd # Servd
+    aec5b961-4566-4b50-aea4-e12f93051f11: Meta # Meta
+    af1b9965-7196-45cb-9406-acbebe4c622e: Post # Post
+    b722d671-d96f-4d4b-afa3-f3c1c446e20e: 'Meta Description' # Meta Description
+    bb4c4dc7-c063-4bac-be45-47d37130a515: 'Post Rich Text' # Post Rich Text
+    c1f9043c-a9fe-4828-8b12-e36d12842d7e: Page # Page
+    c3fed09e-9147-41fe-8f48-1ca29f487646: 'Sub-accordion Item' # Sub-accordion Item
+    c61e98da-ef40-432d-8da8-d351518a5c21: 'Secondary Links' # Secondary Links
+    c610afb3-1efa-4b91-a5fd-33934271b95f: Caption # Caption
+    c975e4b8-725b-40cf-8289-e0758ed7d08a: Body # Body
+    c95691a0-b3a2-44cb-bcf6-03d744bf038a: 'Media Items' # Media Items
+    ca5f72de-57dc-4803-b0a2-3aed1df4803d: 'Post Tags' # Post Tags
+    cc512dcf-3d55-49ec-9c4c-7373a633b069: Menus # Menus
+    cd720f0e-9aa8-440b-9df1-68d2c5f16d6c: About # About
+    ce41e214-4d8b-4f6a-9ac2-95bb19271a32: 'Image Tooltips' # Image Tooltips
+    cee6b1ca-93bb-4af1-b47d-82b23781929b: Icon # Icon
+    d8122882-d2f2-4aa0-b2dd-e7159cbb5e67: 'Post Index' # Post Index
+    db9f0ef0-2ae0-4625-bb55-ff070d64492d: Image # Image
+    ddcb06fd-e265-4e30-aec3-2cc4d8c791f5: Header # Header
+    e3c44a40-6b4f-492f-945f-b71ab515f2cc: Links # Links
+    e239bfbf-aadc-4869-b083-1b89af5a294e: 'Positioning CSS' # Positioning CSS
+    e20465eb-96b7-4f76-9f57-e12f30c984cf: Post # Post
+    e604059d-87e0-4aef-84fe-410cc97c3b48: 'Partner Logos' # Partner Logos
+    eae22444-22c9-4f11-a5d8-075056c0c45c: 'Media Items' # Media Items
+    efce25fb-7bd4-49cc-8f17-a84b348cf349: Link # Link
+    efdbc3d5-9127-4302-bc0e-507536d065c8: 'Accordion Item' # Accordion Item
+    f0d9e50f-3e81-47db-97c3-15d59a8a7b37: Media # Media
+    f0683f0c-7adb-40a0-bd6c-3f8ecdfdeb86: Conclusion # Conclusion
+    f1d51b4b-7d86-41ba-b54a-b81f85ea651d: 'Post Categories' # Post Categories
+plugins:
+  assetrev:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  buttonbox:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  feed-me:
+    edition: standard
+    enabled: false
+    schemaVersion: 5.1.1
+    settings:
+      assetDownloadCurl: false
+      backupLimit: 100
+      cache: 60
+      compareContent: true
+      csvColumnDelimiter: ','
+      dataDelimiter: '-|-'
+      enabledTabs: '*'
+      logging: true
+      parseTwig: false
+      pluginName: Feeds
+      queueMaxRetry: null
+      queueTtr: null
+      requestOptions:
+        __assoc__:
+          -
+            - headers
+            -
+              __assoc__:
+                -
+                  - User-Agent
+                  - 'Feed Me'
+      runGcBeforeFeed: false
+      skipUpdateFieldHandle: ''
+      sleepTime: 0
+  matrix-extended:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.1.0
+    settings:
+      enableDragDrop: false
+      expandMenu: false
+      expandUngrouped: true
+      experimentalFeatures: false
+      extraDeleteButton: false
+      fields:
+        __assoc__:
+          -
+            - pageSections
+            -
+              __assoc__:
+                -
+                  - groups
+                  -
+                    -
+                      __assoc__:
+                        -
+                          - label
+                          - Simple
+                        -
+                          - types
+                          -
+                            - header
+                            - text
+      removeEntryTypesFromDiscloseMenu: false
+      ungroupedPosition: start
+  palette:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  servd-asset-storage:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+    settings:
+      adjustFeedmeLogs: ''
+      assetsEnvironment: ''
+      assetsEnvironmentOverwrite: ''
+      cacheClearMode: full
+      clearCachesOnSave: always
+      disableDynamic: ''
+      disableTransforms: ''
+      fsMapsEnabled: ''
+      imageAutoConversion: webp
+      injectCors: ''
+      projectSlug: overview-website
+      securityKey: IyUSU7wkIgihUCdat8vHflVVi1DkhNRO
+      suppressWarnings: ''
+      useLocalVolumes: false
+  sprout-redirects:
+    edition: lite
+    enabled: true
+    schemaVersion: 5.0.2
+  sprout-sitemaps:
+    edition: lite
+    enabled: true
+    schemaVersion: 5.0.0
+sprout:
+  sprout-module-core:
+    modules:
+      BarrelStrength\Sprout\redirects\RedirectsModule:
+        enabled: true
+      BarrelStrength\Sprout\sitemaps\SitemapsModule:
+        enabled: true
+  sprout-module-redirects:
+    cleanupProbability: 1000
+    enable404RedirectLog: false
+    globallyExcludedUrlPatterns: null
+    matchDefinition: urlWithoutQueryStrings
+    queryStringStrategy: removeQueryStrings
+    structureUid: e9fa1b37-ba56-421f-ab08-416d9f7c3526
+    total404Redirects: 250
+    trackRemoteIp: false
+  sprout-module-sitemaps:
+    enableContentQuerySitemaps: false
+    enableCustomPagesSitemap: false
+    groupSettings:
+      3f792a59-8c9f-4d6e-8f61-a72bcaebf9d4: '1' # Pathstream
+    siteSettings:
+      04df0f5f-b9d5-4dda-b9a8-bcccda506022: '1' # Pathstream
+    sitemapAggregationMethod: singleLanguageSitemaps
+    totalElementsPerSitemap: 50
+system:
+  edition: pro
+  live: true
+  name: Overview
+  retryDuration: null
+  schemaVersion: 5.7.0.3
+  timeZone: America/Los_Angeles

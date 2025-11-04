@@ -1,0 +1,6 @@
+{% set mediaType = 'image' %}
+{% if mediaItem.mediaType is defined %}
+  {% set mediaType = mediaItem.mediaType %}
+{% endif %}
+
+{% include 'shared/_mediaItem--' ~ mediaType ~ '.twig' %}

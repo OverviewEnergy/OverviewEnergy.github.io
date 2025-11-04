@@ -1,0 +1,99 @@
+@layer components {
+  .Footer {
+    @apply relative bg-gray-500 text-gray-200;
+  }
+
+  .Footer-container {
+    @apply px-[20px] py-[60px] max-w-[var(--container-width)] mx-auto flex flex-col
+           items-center justify-between gap-y-[60px]
+           md:px-[60px] md:py-[40px] md:gap-y-[60px]
+           lg:px-[60px] lg:py-[100px] lg:gap-y-[140px];
+  }
+
+  .Footer-a {
+    @apply w-full md:grid md:grid-cols-3 lg:grid-cols-2;
+  }
+
+  .Footer-a-a {
+    @apply hidden md:block;
+  }
+
+  .Footer-a-b {
+    @apply text-center md:col-span-2 md:text-left lg:col-span-1;
+  }
+
+  .Footer-b {
+    @apply w-full flex flex-col-reverse gap-y-[60px]
+           lg:grid lg:grid-cols-2;
+  }
+
+  .Footer-b-a {
+    @apply flex flex-col items-center justify-end gap-y-[20px] text-center relative
+           md:text-left md:items-start md:justify-start lg:justify-end;
+  }
+
+  .FooterFlag {
+    @apply md:absolute bottom-0 right-0 lg:static;
+  }
+
+  .Footer-mark {
+    @apply block w-[120px] lg:w-[168px];
+    svg {
+      @apply w-full;
+    }
+  }
+
+  .FooterMenus {
+    @apply flex flex-col gap-y-[60px]
+           md:grid md:grid-cols-3;
+  }
+
+  .FooterMenu {
+    @apply flex flex-col items-center gap-y-[10px]
+           md:items-start md:justify-start;
+
+    h3 {
+      @apply mb-[10px] md:mb-[30px];
+    }
+
+    h5 {
+      @apply hidden md:block;
+    }
+
+    .FooterMenu-links {
+      @apply flex flex-col items-center
+             md:w-full md:items-start;
+
+      a {
+        @apply no-underline md:border-t md:border-gray-400 py-[6px]
+               md:w-full md:block hover:text-tan
+               transition-colors duration-200;
+      }
+    }
+  }
+
+  .Footer-form {
+    @apply relative flex flex-col md:flex-row justify-between items-center
+           gap-[20px] w-full
+           md:items-end;
+
+    label {
+      @apply hidden lg:block absolute bottom-0 left-0 translate-y-[150%];
+    }
+
+    input {
+      @apply w-full border border-gray-300 rounded outline-none grow max-w-[400px]
+             px-[20px] py-[10px]
+             md:max-w-full
+             md:py-[7px] md:px-[10px]
+             lg:rounded-none lg:py-[12px] lg:border-b lg:px-0
+             lg:border-white lg:border-t-0 lg:border-x-0
+             lg:text-3xl lg:font-display;
+    }
+
+    button {
+      @apply outline-none;
+    }
+  }
+
+}

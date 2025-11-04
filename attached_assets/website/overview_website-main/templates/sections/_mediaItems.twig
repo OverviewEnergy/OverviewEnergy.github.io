@@ -1,0 +1,14 @@
+<section
+  class="{{classes}}"
+  {% if section.theSectionId is not empty %}
+    id="{{section.theSectionId}}"
+  {% endif %}
+>
+  <div class="PageSection-container">
+    {% include "shared/_mediaItems.twig" with {
+      mediaItems: section.mediaItems,
+      wrapperClasses: 'flex flex-col gap-[20px]',
+      imageClasses: 'rounded'
+    } only %}
+  </div>
+</section>

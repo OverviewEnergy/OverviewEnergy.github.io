@@ -1,0 +1,36 @@
+<div
+  data-tabs
+  class="flex flex-row justify-center mb-[80px]"
+>
+  <div
+    class="PostsFilters"
+    data-tabs-buttons
+    data-barba-prevent="all"
+  >
+    <a
+      href="?category=all"
+      class="PostFilter"
+      data-tabs-button="{% if urlCategory is empty %}active{% endif %}"
+      data-post-filter
+      {% if urlCategory is empty %}
+        aria-current="true"
+      {% endif %}
+    >
+      All
+    </a>
+
+    {% for category in categories %}
+      <a
+        href="?category={{category.slug}}"
+        class="PostFilter"
+        data-tabs-button="{% if urlCategory == category.slug %}active{% endif %}"
+        data-post-filter
+        {% if urlCategory == category.slug %}
+          aria-current="true"
+        {% endif %}
+      >
+        {{category.title}}
+      </a>
+    {% endfor %}
+  </div>
+</div>

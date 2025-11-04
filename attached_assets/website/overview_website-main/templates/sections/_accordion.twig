@@ -1,0 +1,51 @@
+<section
+  class="{{classes}}"
+  data-init-section="Accordion"
+  {% if section.theSectionId is not empty %}
+    id="{{section.theSectionId}}"
+  {% endif %}
+>
+  <div class="PageSection-container">
+
+    <div class="Accordion" data-accordion>
+      {% for accordionItem in section.accordionItems %}
+        <div
+          class="AccordionItem"
+          data-accordion-item
+          {% if accordionItem.theSectionId is not empty %}
+            id="{{accordionItem.theSectionId}}"
+          {% endif %}
+        >
+          <div
+            class="flex flex-row items-center justify-between
+                   gap-[10px] md:gap-[20px]"
+            data-accordion-toggle
+          >
+            <h2 class="h1">{{accordionItem.title}}</h2>
+            <div data-accordion-icons>
+              <span
+                data-accordion-closed-icon
+                class="Button Button--iconOnly"
+              >
+                {% include "svg/_plusThick.svg.twig" %}
+              </span>
+              <span
+                data-accordion-open-icon
+                class="Button Button--iconOnly Button--tan"
+              >
+                {% include "svg/_minusThick.svg.twig" %}
+              </span>
+            </div>
+          </div>
+          <div class="" data-accordion-body>
+            <div class="pt-[20px] md:pt-[40px]">
+              {% include "shared/_accordion--#{accordionItem.accordionItemType}.twig" with {
+                accordionItem: accordionItem
+              } %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

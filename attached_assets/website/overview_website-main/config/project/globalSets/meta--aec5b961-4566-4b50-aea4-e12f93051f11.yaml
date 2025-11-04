@@ -1,0 +1,85 @@
+fieldLayouts:
+  1712b291-cfcc-4fa5-9be9-10a6432b4ef9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-03T20:40:52+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'These meta fields will be used as site-wide defaults. Each can be overridden on a per-page/post basis.'
+            type: craft\fieldlayoutelements\Tip
+            uid: e2fd6605-ab65-4f19-8f87-d7b100a1d134
+            userCondition: null
+          -
+            dateAdded: '2024-09-03T20:40:18+00:00'
+            elementCondition: null
+            fieldUid: 7bedc8bb-4bc6-422c-b318-9d01c50df39f # Meta Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: abf47889-d6fe-443c-9254-414f03ba9b5e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-03T20:40:18+00:00'
+            elementCondition: null
+            fieldUid: b722d671-d96f-4d4b-afa3-f3c1c446e20e # Meta Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 117d9b00-79f8-49c5-b407-f0e4e0a91483
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-03T20:40:18+00:00'
+            elementCondition: null
+            fieldUid: 307f8307-f006-49b9-aa8b-900ddb2f0767 # Meta Keywords
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 003c8995-0a74-464d-b12c-d9b5ea9ebace
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-03T20:40:18+00:00'
+            elementCondition: null
+            fieldUid: 5eff4a3a-4d04-402d-b07e-0ee136a5eacc # Meta Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c047b66-11d3-4673-a59e-e733e717b2eb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 48b45af0-02c6-4ce3-899f-dcdddfd1c022
+        userCondition: null
+handle: meta
+name: Meta
+sortOrder: 3

@@ -1,0 +1,35 @@
+{% set classes = classes|default('') %}
+{% set url = link.linkUrl|default('') %}
+{% set title = link.linkTitle|default('') %}
+{% set attributes = attributes|default('') %}
+
+{% set iconOnly = false %}
+{% if link is defined and link.iconOnly is defined %}
+  {% set iconOnly = link.iconOnly %}
+{% endif %}
+
+{% if link.linkType == 'entry' and link.entry is not empty %}
+  {% set url = '/' ~ link.entry.one.uri %}
+  {% set title = link.entry.one.title %}
+{% endif %}
+
+{% if iconOnly %}
+  {% set classes = classes ~ ' Button--iconOnly' %}
+{% endif %}
+
+<a
+  href="{{url}}"
+  class="{{classes}}"
+  {% if link.openInNewTab %}target="_blank"{% endif %}
+  {% if attributes is not empty %}{{attributes|raw}}{% endif %}
+>
+  {% if iconOnly == false %}
+    {{title}}
+  {% endif %}
+
+  {% if link.iconType is defined and link.iconType != 'noIcon' %}
+    <span class="inline-block">
+      {% include "svg/_#{link.iconType}.svg.twig" %}
+    </span>
+  {% endif %}
+</a>

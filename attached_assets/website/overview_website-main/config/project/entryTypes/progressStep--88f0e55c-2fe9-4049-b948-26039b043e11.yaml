@@ -1,0 +1,102 @@
+color: null
+fieldLayouts:
+  f96987d3-de14-4993-b7cd-085be156fee2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-05-06T21:53:27+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b69d6d09-826c-4f28-93f0-6b0b36ac0efd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:55:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e3c44a40-6b4f-492f-945f-b71ab515f2cc # Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be1ad045-a9a0-4a3a-99db-3d0a9f94ace7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:55:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 078fc071-b45f-4504-abf0-877ecdaab138 # Status
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be4cf3ef-7a78-40fb-83ca-b77bfb299ab4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-05-06T21:55:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 0fe347cf-5e7b-4446-a9e1-359f64551463 # Text
+            handle: year
+            includeInCards: false
+            instructions: null
+            label: Year
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c50d38c-310c-498c-abaf-92f93d22f6d5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f6e227a-76fe-4879-9930-b8c8b954f7f3
+        userCondition: null
+handle: progressStep
+hasTitleField: true
+icon: null
+name: 'Progress Step'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

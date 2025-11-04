@@ -1,0 +1,51 @@
+<section
+  class="{{classes}}"
+  {% if section.theSectionId is not empty %}id="{{section.theSectionId}}"{% endif %}
+  data-init-section="Video"
+>
+  <div
+    class="PostSection-container text-center flex flex-col
+           justify-center items-center"
+  >
+    <div
+      class="aspect-square overflow-hidden rounded-[8px] flex flex-col
+             justify-center items-center h-auto relative
+             sm:aspect-video w-full
+             lg:max-w-[1178px]"
+    >
+      {% include "shared/_mediaItem.twig" with {
+        mediaItem: section.mediaItem.one,
+        imageClasses: 'object-cover absolute w-full h-full top-0 left-0',
+        sizes: '100vw'
+      } only %}
+
+      <div
+        class="bg-bigVideoScreen absolute
+               top-0 left-0 w-full h-full"
+      ></div>
+
+      <div class="relative flex flex-col gap-y-32 lg:gap-y-48">
+        {% if section.title is not empty %}
+          <h2
+            class="u-h1 text-white"
+          >
+            {{section.title|raw}}
+          </h2>
+        {% endif %}
+
+        <div>
+          <button
+            class="Button Button--big Button--white Button--blur gap-x-16"
+            data-open-video-modal
+            data-open-video-modal-embed="{{section.html|escape('html_attr')}}"
+          >
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 6.13397C11.6667 6.51888 11.6667 7.48112 11 7.86603L2 13.0622C1.33333 13.4471 0.499999 12.966 0.499999 12.1962L0.5 1.80385C0.5 1.03405 1.33333 0.552922 2 0.937822L11 6.13397Z" fill="black"/>
+            </svg>
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

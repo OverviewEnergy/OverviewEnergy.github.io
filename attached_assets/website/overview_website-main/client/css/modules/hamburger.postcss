@@ -1,0 +1,57 @@
+@layer components {
+  :root {
+    --hamburger-speed: 0.1s;
+  }
+
+  .Hamburger {
+    @apply relative size-[30px] flex flex-col
+           justify-between cursor-pointer lg:hidden;
+  }
+
+  .Hamburger-line {
+    @apply w-full h-[2px] bg-white origin-center;
+    transition: translate var(--hamburger-speed) ease,
+                opacity var(--hamburger-speed) ease,
+                rotate var(--hamburger-speed) ease
+                background-color var(--hamburger-speed) ease;
+  }
+
+  .Hamburger-line:nth-child(1) {
+    translate: 0 6px;
+    rotate: 0deg;
+    [data-hamburger="true"] & {
+      translate: 0 14px;
+      rotate: 45deg;
+      transition: translate var(--hamburger-speed) ease,
+                  rotate var(--hamburger-speed) ease 0.15s;
+    }
+  }
+
+  .Hamburger-line:nth-child(2) {
+    [data-hamburger="true"] & {
+      @apply opacity-0;
+      transition: opacity var(--hamburger-speed) ease;
+    }
+    &:not([data-hamburger="true"]) {
+      transition: opacity var(--hamburger-speed) ease 0.1s;
+    }
+  }
+
+  .Hamburger-line:nth-child(3) {
+    translate: 0 -6px;
+    rotate: 0deg;
+    [data-hamburger="true"] & {
+      translate: 0 -14px;
+      rotate: -45deg;
+      transition: translate var(--hamburger-speed) ease,
+                  rotate var(--hamburger-speed) ease 0.15s;
+    }
+  }
+
+  .Hamburger-line {
+    &:not([data-hamburger="true"]) {
+      transition: translate var(--hamburger-speed) ease 0.15s,
+                  rotate var(--hamburger-speed) ease;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div
+  class=""
+  data-post-content
+  aria-live="polite"
+>
+  {% if posts|length == 0 %}
+    <h3 class="text-center">
+      Sorry, no posts matching that criteria at the moment.
+    </h3>
+  {% endif %}
+
+  {% include "shared/_featuredPost.twig" %}
+
+  <div
+    id="posts"
+    class="grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-[90px]"
+  >
+    {% for post in posts %}
+      {% include "shared/_postIndexPreview.twig" with {
+        post: post
+      } only %}
+    {% endfor %}
+  </div>
+</div>
