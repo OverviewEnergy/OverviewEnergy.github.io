@@ -1,1 +1,2 @@
-overviewenergy.com
+# In your project root
+echo "overviewenergy.com" > public/CNAME
